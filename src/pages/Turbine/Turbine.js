@@ -17,7 +17,7 @@ const Turbine = (props) => {
     useEffect(()=>{
         dispatch(generateDetails());
         dispatch(generateAlarms());
-    },[]);
+    },[dispatch]);
     
     // Generates alarms every x seconds
     useEffect(() => {
@@ -26,7 +26,7 @@ const Turbine = (props) => {
             console.log('This will run every second!');
         }, 5000);
         return () => clearInterval(interval);
-    }, []);
+    }, [dispatch]);
 
     // When loading or no data available
     if (!isData) return <div>Please wait, loading.</div>;
