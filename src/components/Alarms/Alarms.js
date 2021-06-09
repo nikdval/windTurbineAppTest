@@ -14,7 +14,7 @@ const Alarms = ({alarms}) => {
     })
 
     return (
-        <BasicWrapper>
+        <BasicWrapper title="Alarms">
             {alarms.length ===0 && <h3>No problems detected</h3>}
             {alarms.length > 0 && <table>{displayAlarms}</table>}
         </BasicWrapper>
