@@ -2,7 +2,7 @@ import {TURBINE_GENERATE_BEGIN, TURBINE_GENERATE_DETAILS,TURBINE_GENERATE_ERROR,
 const initialState = {
     loading: false,
     error: null,
-    details: {},
+    details: null,
     alarms: []
 }
 
@@ -12,9 +12,11 @@ const turbineReducer = function (state = initialState, action) {
         state.loading = true;
         break;
       case TURBINE_GENERATE_DETAILS:
-        state.loading = false;
-        state.details = action.details;
-        break;
+        return {
+            ...state,
+            loading:false,
+            details: action.details
+        }
       case TURBINE_GENERATE_ERROR:
         state.loading = false;
         state.error = action.error;

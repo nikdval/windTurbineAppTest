@@ -1,5 +1,6 @@
 export default class Turbine {
-    constructor(model,ratePower,windClass,rDiameter){
+    constructor(name,model,ratePower,windClass,rDiameter){
+        this.name = name;
         this.model = model;
         this.ratePower = ratePower;
         this.windClass = windClass;
@@ -9,6 +10,7 @@ export default class Turbine {
 
     getTurbineDetails() {
         return {
+            name: this.name,
             model: this.model,
             ratePower: this.ratePower,
             windClass: this.windClass,
