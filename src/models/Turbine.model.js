@@ -1,6 +1,5 @@
 export default class Turbine {
     constructor(model,ratePower,windClass,rDiameter){
-        super();
         this.model = model;
         this.ratePower = ratePower;
         this.windClass = windClass;
