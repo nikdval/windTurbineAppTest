@@ -16,13 +16,13 @@ const Turbine = (props) => {
 
     const isData = details !== null;
     
-    // Runs only in the begining
+    // Runs only in the begining to load the first data
     useEffect(()=>{
         dispatch(generateDetails());
         dispatch(generateAlarms());
     },[dispatch]);
     
-    // Generates alarms every x seconds
+    // Generates alarms every 3 seconds
     useEffect(() => {
         const interval = setInterval(() => {
             dispatch(generateAlarms());

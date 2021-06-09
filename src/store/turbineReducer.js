@@ -12,11 +12,9 @@ const turbineReducer = function (state = initialState, action) {
         state.loading = true;
         break;
       case TURBINE_GENERATE_DETAILS:
-        return {
-            ...state,
-            loading:false,
-            details: action.details
-        }
+        state.loading = false;
+        state.details = action.details;
+        break;
       case TURBINE_GENERATE_ERROR:
         state.loading = false;
         state.error = action.error;

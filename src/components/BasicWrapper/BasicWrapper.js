@@ -1,6 +1,12 @@
 import React from 'react';
 import './BasicWrapper.scss';
 
+/**
+ * BasicWraper
+ * It's a wrapper used in multiple components with similar apperarence
+ * @param {string} title 
+ * 
+ */
 const BasicWrapper = ({children, title}) => {
     return (
         <div className="basic-wrapper">

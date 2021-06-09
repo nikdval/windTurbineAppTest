@@ -2,6 +2,12 @@ import React from 'react';
 import BasicWrapper from '../BasicWrapper/BasicWrapper';
 import './Alarms.scss';
 
+/**
+ * Alarms Component
+ * Display a table of all alarms or a message for no alarms
+ * @param {array} alarms 
+ *  
+ */
 const Alarms = ({alarms}) => {
     const displayAlarms = [];
 

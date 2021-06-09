@@ -25,6 +25,12 @@ const metadata = [
      }
  ]
 
+/**
+ * DetailsTable
+ * Displays the turbine details combining incoming data and metadata for each propery
+ * @param {object} details 
+ * @returns 
+ */
 const DetailsTable = ({details}) => {
     const rows = []
     metadata.map(item => {
