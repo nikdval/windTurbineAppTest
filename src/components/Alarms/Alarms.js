@@ -1,5 +1,6 @@
 import React from 'react';
 import BasicWrapper from '../BasicWrapper/BasicWrapper';
+import './Alarms.scss';
 
 const Alarms = ({alarms}) => {
     const displayAlarms = [];
@@ -15,8 +16,8 @@ const Alarms = ({alarms}) => {
 
     return (
         <BasicWrapper title="Alarms">
-            {alarms.length ===0 && <h3>No problems detected</h3>}
-            {alarms.length > 0 && <table>{displayAlarms}</table>}
+            {alarms.length ===0 && <h4 className="no-alarms">No problems detected</h4>}
+            {alarms.length > 0 && <table className="alarms-table">{displayAlarms}</table>}
         </BasicWrapper>
     )
 }

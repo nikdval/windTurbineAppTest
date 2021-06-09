@@ -1,0 +1,14 @@
+@import "src/assets/styles/sass/utils";
+
+.no-alarms{
+    color: $success-color;
+    text-align: center;
+}
+
+.alarms-table{
+    width: 100%;
+    i {
+        font-size: 1.2em;
+        color: $danger-color;
+    }
+}
