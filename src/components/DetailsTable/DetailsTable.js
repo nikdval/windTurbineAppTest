@@ -1,5 +1,6 @@
 import React from 'react';
 import BasicWrapper from '../BasicWrapper/BasicWrapper';
+import './DetailsTable.scss';
 
 const metadata = [
     { 
@@ -30,14 +31,14 @@ const DetailsTable = ({details}) => {
         rows.push(
             <tr key={item.type}>
                 <td>{item.label}</td>
-                <td>{details[item.type] || - item.units}</td>
+                <td>{details[item.type] || "-"} {item.units}</td>
             </tr>
         )
     })
 
     return (
         <BasicWrapper title="General">
-            <table>{rows}</table>
+            <table className="details-table"><tbody>{rows}</tbody></table>
         </BasicWrapper>
     )
 }

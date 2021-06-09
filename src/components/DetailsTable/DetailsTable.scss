@@ -1,0 +1,11 @@
+@import "src/assets/styles/sass/utils";
+
+.details-table{
+    width: 100%;
+    border-collapse: collapse; 
+
+    tr {
+        height: 1.8em;
+        border-bottom: 1pt solid $secondary-color;
+    }
+}

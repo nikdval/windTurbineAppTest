@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import {generateDetails, generateAlarms} from '../../store/turbineActions';
 import Alarms from '../../components/Alarms/Alarms';
 import DetailsTable from '../../components/DetailsTable/DetailsTable';
+import './Turbine.scss';
 
 const Turbine = (props) => {
     const dispatch = useDispatch();
