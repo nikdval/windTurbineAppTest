@@ -1,13 +1,12 @@
-import logo from '../../assets/images/header-logo-white.svg';
-import './App.css';
+import Header from '../../components/Header/Header';
+import Turbine from '../../pages/Turbine/Turbine';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
-      </header>
+      <Header />
+      <Turbine />
     </div>
   );
 }

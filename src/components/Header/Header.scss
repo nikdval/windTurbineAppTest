@@ -1,0 +1,11 @@
+@import "src/assets/styles/sass/utils";
+
+.header {
+    height: 80px;
+    background-color: $secondary-color;
+    padding: 10px;
+
+    .header-logo{
+        height: 52px;
+    }
+}
