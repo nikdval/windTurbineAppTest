@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import { useDispatch, useSelector } from "react-redux";
 
 import {generateDetails, generateAlarms} from '../../store/turbineActions';
+import Alarms from '../../components/Alarms/Alarms';
 
 const Turbine = (props) => {
     const dispatch = useDispatch();
@@ -30,6 +31,7 @@ const Turbine = (props) => {
         <div className="turbine">
             {!isData && <div>Please wait, loading.</div>}
             {isData && <h2>{details.name}</h2>}
+            {isData && <Alarms alarms = {alarms} /> }
         </div>
        
 
