@@ -1,11 +1,21 @@
+@import "src/assets/styles/sass/utils";
+
 .turbine{
     padding: 20px;
     display: flex; 
     flex-direction: column;
     justify-content:center;
 
-    h2{
-        // align-self: center;
-        text-align: center;
-    }
+    .turbine-title-wrapper{
+        align-self: center;
+        margin-bottom: 20px;
+
+        h2{
+            display: inline;
+        }
+
+        .turbine-icon{
+            height: 50px;
+        }
+    }  
 }
