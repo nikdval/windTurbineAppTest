@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+## Introduction
+The application display a wind turbine inspection.
+the turbine has 100 items on it, each gets inspected. The application outputs alarms by numbers from 1 to 100, but for multiples of three print “Coating Damage” instead of the number and for the multiples of five print “Lightning Strike” instead of the number. For numbers which are multiples of both three and five print 2 alarms “Coating Damage" and  "Lightning Strike”.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Every 3 seconds a new http call is made to the api.js to get new alarms.
+
+## Instalation
+### `npm install`
 
 ## Available Scripts
 

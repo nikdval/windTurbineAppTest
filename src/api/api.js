@@ -36,12 +36,12 @@ export const GET = (query) =>{
     switch(query){
         case "alarms":
             return   axios
-            .get(``)
+            .get(``) // link to the server
             .then(() => toJSONresponse(testTurbine.getTurbineAlarms()))
             .catch((err) => err);
         case "details":
             return   axios
-            .get(``)
+            .get(``) // link to the server
             .then(() => toJSONresponse(testTurbine.getTurbineDetails()))
             .catch((err) => err);
     }
