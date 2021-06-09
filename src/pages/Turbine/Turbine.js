@@ -10,6 +10,7 @@ import './Turbine.scss';
 
 const Turbine = (props) => {
     const dispatch = useDispatch();
+    const loading = useSelector((state)=>state.turbine.loading);
     const details = useSelector((state)=> state.turbine.details);
     const alarms = useSelector((state)=>state.turbine.alarms);
 
@@ -31,8 +32,9 @@ const Turbine = (props) => {
     }, [dispatch]);
 
     // When loading or no data available
-    if (!isData) return <div>Please wait, loading.</div>;
-   
+    if (loading) return <div>Please wait, loading.</div>;
+    if (!isData) return <div>No available data</div>;
+
     const iconColor = alarms.length > 0 ? '#FF1D25' : '#FACD3C'
     return (
         <div className="turbine">

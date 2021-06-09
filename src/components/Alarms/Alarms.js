@@ -7,7 +7,7 @@ const Alarms = ({alarms}) => {
 
     alarms.map(alarm => {
         displayAlarms.push(
-            <tr>
+            <tr key={alarm}>
                 <td><i class="fas fa-exclamation-circle"></i></td>
                 <td>{alarm}</td>
             </tr>
